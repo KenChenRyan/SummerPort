@@ -71,10 +71,10 @@ class robotChasis{
 
     encoder leftTracker = encoder(Brain.ThreeWirePort.A);
     encoder rightTracker = encoder(Brain.ThreeWirePort.C);
-    encoder backTracker = encoder(Brain.ThreeWirePort.E);
+    //encoder backTracker = encoder(Brain.ThreeWirePort.E);
     //rotation leftTracker = rotation(PORT1, false);
     //rotation rightTracker = rotation(PORT4, false);
-    //rotation backTracker = rotation(PORT3, false);
+    rotation backTracker = rotation(PORT3, false);
     
     limit shootD = limit(Brain.ThreeWirePort.A);
 
